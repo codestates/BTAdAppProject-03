@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+App {
+  background-color: #C0C0C0;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid white;
+}
+
+.header-text {
+  margin-left: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.header-right {
+  margin-left: 0px;
+  display: flex;
+  justify-content: right;
+}
+
+.logo-container {
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.main-btn-group-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  padding: 1rem;
+}
+
+.main-btn-container {
+  margin: 1rem 0.25rem 1rem 0.25rem;
+}
+
+.main-btn {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  margin: auto;
+  border: 2px solid rgb(255, 108, 0);
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+
+.btn-white {
+  border-color: white;
+  color: white;
+}
+
+.main-btn:hover {
+  color: #00ffe1;
+  border-color: #00ffe1;
+}
+
+.btn-txt-container {
+  font-size: 0.75rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.toggleButton {
+  cursor: pointer;
+  margin-left: 35px;
+  background-color: gray;
+  width: 40px;
+  min-width: 40px;
+  display: block;
+  padding: 4px;
+  border: none;
+  border-radius: 60px;
+  transition: 0.5s;
+}
+
+.toggleSwitchCircle {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: #F5F5F5;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin-right: 0;
+}
+
+.txt-pink {
+  color: rgb(255, 108, 0);
+}

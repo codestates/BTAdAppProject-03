@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "BTA-03 Extension",
+  "description": "Extension for BTA-03",
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "action": {
+    "default_title": "bta-03-badge extension",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "bithumb-16.png",
+      "32": "bithumb-32.png",
+      "128": "bithumb-128.png"
+    }
+  },
+  "icons": {
+    "16": "bithumb-16.png",
+    "32": "bithumb-32.png",
+    "64": "bithumb-64.png",
+    "128": "bithumb-128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.twitter.com/*"
+      ],
+      "js": [
+        "contentScript.bundle.js"
+      ],
+      "css": [
+        "content.styles.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "RussoOne-Regular.ttf",
+        "Unbounded-Bold.ttf",
+        "Unbounded-Medium.ttf"
+      ],
+      "matches": [
+        "https://*.twitter.com/*"
+      ]
+    }
+  ]
+}
