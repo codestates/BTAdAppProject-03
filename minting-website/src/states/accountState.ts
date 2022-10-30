@@ -19,8 +19,3 @@ export const addressState = atom<string | null>({
     key: 'isConnected',
     default: false,
   });
-  
-  export const ddExpansionState = atom<boolean>({
-    key: 'isDropdownExpanded',
-    default: false,
-  });

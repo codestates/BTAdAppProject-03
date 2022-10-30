@@ -1,0 +1,108 @@
+@import '../../color.scss';
+
+#modal-close-img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.modal-soul-img {
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+}
+
+.twitter-icon-img {
+    width: 1.5rem;
+    height: 1.25rem;
+}
+
+.modal-container {
+    background-color: $light-black;
+    z-index: 1000;
+    color: $white;
+}
+
+.modal-content {
+    padding: 1.75rem;
+    border-radius: 1rem;
+    border: 1px $white solid;
+    z-index: 1001;
+    background-color: $light-black;
+    position: fixed;
+    width: 23rem;
+    height: 18rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'unbounded-medium';
+    font-size: 1rem;
+}
+
+.modal-overlay {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(256, 256, 256, 0.1);
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+.modal-header-box {
+    margin: 0.5rem 0rem 2rem 0rem;
+}
+
+.modal-content-box {
+    margin: 0.5rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.submit-btn-wrapper {
+    width: 10rem;
+    margin: 1rem auto;
+}
+
+.modal-header-txt {
+    font-family: 'unbounded-bold';
+    font-size: 1.4rem;
+    color: $red;
+}
+
+.modal-header-txt:hover {
+    color: $cyan;
+}
+
+.submit-input {
+    margin: 1rem auto;
+    height: 1.4rem;
+    padding: 2rem auto;
+    border-radius: 0.25rem;
+    font-family: 'unbounded-medium';
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-modal-close {
+    cursor: pointer;
+    float: right;
+}
+
+.modal-input-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
