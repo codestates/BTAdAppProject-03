@@ -1,0 +1,11 @@
+@import '../../color.scss';
+@import '../../font.scss';
+
+.txt-white {
+    color: $white;
+}
+
+.font-unbounded {
+    font-family: "unbounded-bold";
+    font-size: 0.8rem;
+}

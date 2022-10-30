@@ -1,0 +1,124 @@
+@import '../../color.scss';
+
+a.navbar-link {
+    color: $gray;
+    text-decoration: none !important;
+    white-space: nowrap;
+}
+
+a.navbar-link:hover {
+    color: $white;
+    text-decoration: none !important;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+}
+
+.navbar {
+    width: calc(100vw - 2rem);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    color: $white;
+    font-family: 'arcade-classic';
+    font-size: 1.3rem;
+}
+
+.navbar-dark {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.navbar[data-sticky='top'] {
+    z-index: 999;
+    transition: background-color 0.2s ease;
+}
+
+.navbar-expand-lg {
+    .container {
+        flex-wrap: nowrap;
+    }
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.navbar-logo-img {
+    height: 28px;
+}
+
+.navbar-icons-box {
+    display: flex;
+    margin: 0 0.2vw auto;
+}
+
+.navbar-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.6vw auto;
+}
+
+.navbar-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1vw auto;
+}
+
+.navbar-icon-img {
+    filter: opacity(50%);
+    height: 20px;
+}
+
+.navbar-icon-img:hover {
+    filter: opacity(100%);
+}
+
+.navbar-twitter-img {
+    height: 16px;
+    margin: 2px auto;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.justify-content-end {
+    justify-content: flex-end !important;
+}
+
+.btn-connect-wallet {
+    margin-right: 0.25rem;
+}
+
+.navbar-btn-icon-hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-link-collapsed {
+        display: none;
+    }
+
+    .navbar-btn-icon-hidden {
+        display: flex;
+    }
+
+    .navbar-btn-collapsed {
+        display: none;
+    }
+}
