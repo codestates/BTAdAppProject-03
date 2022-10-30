@@ -2,7 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Scripts to run (Docker Version)
+
+If you choose to run this with Docker, you can run:
+### `docker build -t dapp_server .`
+AND
+### `docker run --name dapp_container -p 3000:3000 dapp_server`
+
+## Scripts to run (MacOS and Linux)
 
 In the project directory, you can run:
 
